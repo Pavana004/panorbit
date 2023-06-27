@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.homeContainer {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background_wave svg {
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background_wave {
+    width: 100%;
+    height: 500px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.empty {
+    width: 100%;
+    height: 100px;
+    background-color: #4C4AC8;
 }
 
-.App-link {
-  color: #61dafb;
+.CardContainer {
+    position: absolute;
+    width: 30rem;
+    height: 400px;
+    top: 30%;
+    left: 36%;
+    overflow: auto;
+    border-radius: 15px;
+
+   
+}
+.CardContainer::-webkit-scrollbar{
+    width: 5px;
+}
+.CardContainer::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 20px;
+}
+.CardContainer::-webkit-scrollbar-thumb{
+    background-color: #c9c9ce;
+    border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.cardhead {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    background-color: #e8e8e9;
+}
+
+.cardhead h6 {
+    margin: auto;
+}
+
+.userImg {
+    width: 40px;
+    height: fit-content;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+.cardbody{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    border-bottom: 2px solid #e8e8e9;
+    cursor: pointer;
+    color: black;
+}
+.cardbody:hover{
+    background-color:#4C4AC8;
+    color: white;
+    
+}
+.cardbody h6{
+  margin: 10px;
+}
+.anger{
+    text-decoration: none;
+    color:#e8e8e9;
+    cursor: pointer;
+}
+.profileContainer{
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #4C4AC8;
+    border-top-right-radius: 20px;
+}
+hr{
+    color:white;
+}
+.catogeries{
+    
+    margin-top: 60%;
+    padding: 20px;
+    font-weight: bold;
+}
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+}
+.profilePageHead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+   
+}
+.userProfileImg{
+      display: flex;    
+
+}
+.userInfoContainer{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    font-weight:bold ;
+    font-size: medium;
+}
+.userInfoImg{
+    width: 180px;
+    height: auto;
+    border-radius: 100px;
+}
+.userInfoDetails{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.userCompanyDetails{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 70px;
+}
+.userAddressDetails{
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+.infoContainer1{
+    width: 50%;
+    border-right: 1px solid #c9c9ce;
+}
+.insfoContainer2{
+    width: 50%;
+    padding: 8px;
+}
+
+.mapContainer{
+    height: 250px;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.geoContainer{
+    display: flex;
+    font-size: xx-small;
+    justify-content: end;
+    gap: 10px;
+}
+.SignOutCard{
+    position: absolute;
+    width: 280px;
+    height: 240px;
+    background-color:#fdfdff;
+    box-shadow: 5px 5px 15px 15px #e8e8e9;
+    border-radius: 30px;
+    left: 75%;
+    top: 10%;
+    text-align: center;
 }
